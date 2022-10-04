@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== LINE ICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Responsive portfolio website - CrypticalCoder</title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header id="header" class="header">
+        <!--nav-->
+        <nav class="nav container padd-15">
+          <!--nav logo-->
+          <a href="#" class="nav-logo">
+            <h2>Dennis</h2>
+          </a>  
+          <!--nav menu-->
+          <div class="nav-menu" id="nav-menu">
+            <!--nav list-->
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+          </div>
+          <!--nav btns-->
+          <div class="nav-btns">
+            <!--theme change btn-->
+            <i class="lni lni-pallet change-theme" id="theme-button"></i>
+            <!--toggle btn-->
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="lni lni-grid-alt"></i>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <!--=============== MAIN ===============-->
+    <main class="main-content">
+
+        <!--=============== HOME ===============-->
+        <section class="home" id="home">
+            <div class="container">
+                <!--intro-->
+                <div class="intro">
+                    <!--avatar image-->
+                    <img src="assets/img/avatar-1.svg" alt="Dennis">
+                    <!--info--->
+                    <h1>Dennis Kateeti</h1>
+                    <span>I'm a <span class="info-text">Full stack Developer</span></span>
+                    <!--social icons-->
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
+                        <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
+                        <li><a href="#"><i class="lni lni-github-original"></i></a></li>
+                        <li><a href="#"><i class="lni lni-discord"></i></a></li>
+                        <li><a href="#"><i class="lni lni-pinterest"></i></a></li>
+                    </ul>
+                    <!--button-->
+                    <div>
+                        <a href="#" class="btn btn-default">Hire me</a>
+                    </div>
+                    <!--scroll down mouse wheel-->
+                    <div class="scroll-down">
+                        <a href="#" class="mouse-wrapper">
+                            <span>Scroll Down</span>
+                            <span class="mouse">
+                                <span class="wheel"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== About ===============-->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section-title padd-15">About Me</h2>
+                <div class="row">
+                    <div class="about-img padd-15">
+                        <img src="assets/img/avatar-2.svg" alt="">
+                    </div>
+                    <div class="about-content padd-15">
+                        <div class="rounded">
+                           <div class="row">
+                            <div class="about-text padd-15">
+                                <!--about text-->
+                                <p>I am Dennis, web developer from Nairobi, Kenya. I have rich experience in web design and web api integration...Am also good at making advanced php apps</p>
+                                <div>
+                                    <a href="#" class="btn btn-default">Download CV</a>
+                                </div>
+                            </div>
+                            <div class="skills padd-15">
+                                <div class="row">
+                                    <!--skill item-->
+                                    <div class="skill-item">
+                                        <h4>Php</h4>
+                                        <div class="progress">
+                                            <div class="progress-in"
+                                            style="width: 95%; background: rgb(255, 209, 92);"></div>
+                                            <div class="skill-percent">95%</div>
+                                        </div>
+                                    </div>
+                                    <!--skill item-->
+                                    <div class="skill-item">
+                                        <h4>javascript</h4>
+                                        <div class="progress">
+                                            <div class="progress-in"
+                                            style="width: 75%; background: rgb(255, 76, 96);"></div>
+                                            <div class="skill-percent">75%</div>
+                                        </div>
+                                    </div>
+                                    <!--skill item-->
+                                    <div class="skill-item">
+                                        <h4>React Js</h4>
+                                        <div class="progress">
+                                            <div class="progress-in"
+                                            style="width: 75%; background: rgb(24, 184, 184);"></div>
+                                            <div class="skill-percent">75%</div>
+                                        </div>
+                                    </div>
+                                    <!--skill item-->
+                                    <div class="skill-item">
+                                        <h4>Redux</h4>
+                                        <div class="progress">
+                                            <div class="progress-in" 
+                                            style="width: 65%; background: rgb(42, 106, 158);"></div>
+                                            <div class="skill-percent">65%</div>
+                                        </div>
+                                    </div>
+                                    <!--skill item-->
+                                    <div class="skill-item">
+                                        <h4>Fast Api</h4>
+                                        <div class="progress">
+                                            <div class="progress-in"
+                                            style="width: 25%; background: rgb(219, 96, 14);"
+                                            ></div>
+                                            <div class="skill-percent">25%</div>
+                                        </div>
+                                    </div>
+                                    <!--skill item-->
+                                    <div class="skill-item">
+                                        <h4>Express Api</h4>
+                                        <div class="progress">
+                                            <div class="progress-in"
+                                            style="width: 85%; background: rgb(86, 129, 30);"></div>
+                                            <div class="skill-percent">85%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           </div> 
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <!--fact item-->
+                    <div class="fact-item padd-15">
+                       <i class="lni lni-thumbs-up"></i>
+                       <div class="details">
+                        <h3>198</h3>
+                        <p>Projects done</p>
+                       </div>
+                    </div>
+                    <!--fact item-->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-coffee-cup"></i>
+                        <div class="details">
+                         <h3>6798</h3>
+                         <p>Cup of Coffee</p>
+                        </div>
+                     </div>
+                     <!--fact item-->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-users"></i>
+                        <div class="details">
+                         <h3>428</h3>
+                         <p>Satisfied clients</p>
+                        </div>
+                     </div>
+                     <!--fact item-->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-cup"></i>
+                        <div class="details">
+                         <h3>28</h3>
+                         <p>Code Challenges</p>
+                        </div>
+                     </div>
+               </div>
+            </div>
+        </section>
+        <!--=============== Services ===============-->
+        <div class="services section">
+            <div class="container">
+                <!--section title-->
+                <h2 class="section-title padd-15">Services</h2>
+                <div class="row">
+                    <!--service item-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(108, 108, 229);">
+                            <img src="assets/img/service-1.svg" alt="">
+                            <h3>UI/UX design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi.</p>
+                        </div>
+                    </div>
+                    <!--service item-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249, 215, 76);">
+                            <img src="assets/img/service-2.svg" alt="">
+                            <h3>Full stack web app design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi.</p>
+                        </div>
+                    </div>
+                    <!--service item-->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249, 123, 139);">
+                            <img src="assets/img/service-3.svg" alt="">
+                            <h3>Data analysis</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text padd-15">
+                   <p>Looking for a custom job? <a href="#">Click here</a> to join community! 👋</p> 
+                </div>
+            </div>
+        </div>
+        <!--=============== Experience ===============-->
+        <section class="section" id="experience">
+            <div class="container">
+                <!--section title-->
+                <h2 class="section-title padd-15">Experience</h2>
+                <div class="row">
+                    <!--education-->
+                    <div class="education padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <!--timeline item-->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2019 - present
+                                        </h3>
+                                        <h3 class="timeline-title">Bachelor's degree</h3>
+                                        <p class="timeline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <!--timeline item-->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2015 - 2018
+                                        </h3>
+                                        <h3 class="timeline-title">KCSE</h3>
+                                        <p class="timeline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <!--timeline item-->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2006 - 2014
+                                        </h3>
+                                        <h3 class="timeline-title">KCPE</h3>
+                                        <p class="timeline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--experience-->
+                    <div class="experience padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <!--timeline item-->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2022 - present
+                                        </h3>
+                                        <h3 class="timeline-title">Eccomerce web app design</h3>
+                                        <p class="timeline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <!--timeline item-->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-briefcase timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> 2022 <small>april</small> - 2022 <small>july</small>
+                                        </h3>
+                                        <h3 class="timeline-title">Intern at DTB Bank</h3>
+                                        <p class="timeline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Pricing ===============-->
+        <section id="pricing" class="section pricing">
+            <div class="container">
+                <!--section title-->
+                <h2 class="section-title padd-15">Pricing Plans</h2>
+                <div class="row">
+                    <!--prices-->
+                    <div class="prices">
+                        <div class="price-item">
+                            <img src="assets/img/price-1.svg" alt="">
+                            <h3 class="plan">Basic Project</h3>
+                            <p>A simple option but powerful to manage your business.</p>
+                            <p>Occasional Email Support</p>
+                            <h3 class="price"><em>$</em>9 <span>Month</span></h3>
+                            <a href="#" class="btn btn-default">Get Started</a>
+                        </div>
+                    </div>
+                    <!--prices-->
+                    <div class="prices">
+                        <div class="price-item best">
+                            <div class="badge">Recommended</div>
+                            <img src="assets/img/price-2.svg" alt="">
+                            <h3 class="plan">Premium Project</h3>
+                            <p>Unlimited product including access to our client space which offers more feautures.</p>
+                            <p>Email Support</p>
+                            <h3 class="price"><em>$</em>40 <span>Month</span></h3>
+                            <a href="#" class="btn btn-default">Get Started</a>
+                        </div>
+                    </div>
+                    <!--prices-->
+                    <div class="prices">
+                        <div class="price-item">
+                            <img src="assets/img/price-3.svg" alt="">
+                            <h3 class="plan">Legacy Project</h3>
+                            <p>A wise option for large companies and individuals.</p>
+                            <p>24/7 support</p>
+                            <h3 class="price"><em>$</em>99 <span>Month</span></h3>
+                            <a href="#" class="btn btn-default">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Portfolio ===============-->
+        <section class="portfolio section">
+
+        </section>
+        <!--=============== Testimonial ===============-->
+        
+        <!--=============== Blog ===============-->
+        
+        <!--=============== Contact ===============-->
+        
+        <!--=============== Footer ===============-->
+        
+    </main>
+    <!--=============== Theme Customize ===============-->
+    
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

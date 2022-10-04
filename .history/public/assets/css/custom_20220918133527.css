@@ -1,0 +1,105 @@
+.hide{
+    display:none;
+}
+.popup{
+    width: 400px;
+    background: rgba(236, 231, 231, 0.719);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup-danger{
+    width: 400px;
+    background: rgba(236, 231, 231, 0.719);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 100%;
+    transform: translate(-50%, -50%) scale(1);
+}
+@media screen and (max-width:400px) {
+    .open-popup{
+        visibility: visible;
+        top: 250%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .popup{
+        width: 300px;
+    }
+    .popup-danger{
+        width: 300px;
+    }
+}
+.popup-danger i{
+    font-size: 40px;
+    background-color: #d64949;
+    color: #fff;
+    margin-top: -40px;
+    border-radius: 50%;
+    padding: 12px;
+    border-bottom: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup-danger h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup-danger button{
+    width: 100%;
+    height: 50px !important;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #d64949 !important;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.popup i{
+    font-size: 40px;
+    background-color: #6fd649;
+    color: #fff;
+    margin-top: -40px;
+    border-radius: 50%;
+    padding: 12px;
+    border-bottom: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    height: 50px !important;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}

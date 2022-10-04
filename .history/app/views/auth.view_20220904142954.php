@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TeetiColab</title>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <link rel="stylesheet" href="<?=ROOT?>/auth/assets/css/login.css">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+        
+            <div class="signin-signup">
+                
+                <form method="post" action="" class="sign-in-form">
+                    <a href="<?=ROOT?>" class="btn">&#8592;&nbsp;&nbsp;Go Back Home</a>
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="lni lni-user"></i>
+                        <input name="username" type="text" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="lni lni-lock"></i>
+                        <input name="password" type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="btn solid">
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="lni lni-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="lni lni-twitter-original"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="lni lni-github-original"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="lni lni-google"></i>
+                        </a>
+                    </div>
+                </form>
+                <form method="post" action="" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="lni lni-user"></i>
+                        <input type="text" name="username" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="lni lni-envelope"></i>
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="lni lni-lock"></i>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="input-field">
+                        <i class="lni lni-eye"></i>
+                        <input type="password" name="password2" placeholder="Retype Password">
+                    </div>
+                    <input type="submit" value="Sign Up" class="btn solid">
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="lni lni-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="lni lni-twitter-original"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="lni lni-github-original"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="lni lni-google"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New Here?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <button class="btn transparent" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="<?=ROOT?>/portfolio/assets/img/colab3.svg" class="image" alt="">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Already a member?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <button class="btn transparent" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="<?=ROOT?>/portfolio/assets/img/startup.svg" class="image" alt="">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text padd-15">
+                <p>&copy; Powered By Teeti Colab <small>@2022</small></p>
+            </div>
+        </div>
+    </div>
+    <section class="footer"></section>
+    <script src="<?=ROOT?>/auth/assets/js/reg.js"></script>
+</body>
+</html>

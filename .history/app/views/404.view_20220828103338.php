@@ -1,0 +1,11 @@
+
+<?php $this->view('includes/header');?>
+
+<?php $this->view('includes/nav');?>
+    <div class="container-fluid p-4 text-center">
+    <h2>page not found</h2>
+ 
+    </div>
+
+
+<?php $this->view('includes/footer');?>

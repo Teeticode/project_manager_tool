@@ -1,0 +1,951 @@
+/***------ROOT VARIABLES----*****/
+:root{
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --franklin-font:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    --fantasy-font:fantasy ;
+    
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--color-background);
+    font-size: 0.88rem;
+    font-family:var(--franklin-font);
+    font-weight: 200;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+}
+.container-teeti{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+    
+}
+html{
+    font-size: 14px;
+}
+a{
+    color: var(--color-dark);
+}
+img{
+    display: block;
+    width:100%;
+}
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2{
+    font-size: 1.4rem;
+}
+h3{
+    font-size: 0.87rem;
+}
+h4{
+    font-size: 0.8rem;
+}
+h5{
+    font-size: 0.77rem;
+}
+small{
+    font-size: 0.77rem;
+}
+.profile-photo-teeti img{
+    object-fit: cover;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50% !important;
+}
+.text-muted-teeti{
+    color: var(--color-info-dark);
+}
+p{
+    color: var(--color-dark-variant);
+}
+b{
+    color: var(--color-dark);
+}
+i{
+    font-size: 25px;
+}
+.primary-teeti{
+    color: var(--color-primary);
+}
+.danger-teeti{
+    color: var(--color-danger);
+}
+.warning-teeti{
+    color: var(--color-warning)!important;
+}
+.success-teeti{
+    color: var(--color-success);
+}
+
+aside{
+    height: 100vh;
+
+}
+aside .top-teeti{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+aside .logo-teeti h2{
+    font-family: var(--franklin-font);
+    
+}
+aside .logo-teeti{
+    display: flex;
+    gap: 0.8rem;
+}
+aside .logo-teeti img{
+    width: 2rem;
+    height: 2rem;
+}
+aside .logo-teeti{
+
+    display: flex;
+    gap: 0.8rem;
+}
+aside .logo-teeti img{
+    width: 2rem;
+    height: 2rem;
+}
+aside .close-teeti {
+    display: none;
+}
+aside .close-teeti i{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-dark-variant);
+}
+
+/** ========= SIDEBAR ======= ***/
+aside .sidebar-teeti{
+
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    width: 100%;
+    position: relative;
+    top: 3rem;
+    left: 0;
+    margin-left: 0px !important;
+}
+aside h3{
+    font-weight: 500;
+    
+}
+aside .sidebar-teeti a{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem!important;
+    gap: 1rem;
+
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+aside .sidebar-teeti a i{
+    font-size: 1.4rem;
+    transition: all 300ms ease;
+}
+aside .sidebar-teeti a:last-child{
+    position: absolute;
+    bottom: 10rem;
+    margin-left: 0;
+    width: 100%;
+}
+aside .sidebar-teeti a.active{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0!important;
+}
+aside .sidebar-teeti a.active:before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+aside .sidebar-teeti a.active i{
+    color: var(--color-primary);
+    margin-left: calc(1rem - 3px);
+}
+aside .sidebar-teeti a:hover{
+    color: var(--color-primary);
+}
+aside .sidebar-teeti a:hover i{
+    margin-left: 1rem;
+}
+aside .sidebar-teeti .message-count{
+    background: var(--color-danger);
+    color: var(--color-white);
+    padding: 2px 10px;
+    font-size: 11px;
+    border-radius: var(--border-radius-1);
+}
+
+
+/****====== MAIN =====****/
+main{
+    margin-top: 1.4rem;
+    
+}
+
+main .date-teeti{
+    display: inline-block;
+    background: var(--color-light);
+    border-radius: var(--border-radius-1);
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+main .date-teeti .date{
+    background: transparent;
+    color: var(--color-dark);
+}
+main .insights-teeti{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+main .insights-teeti > div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+main .insights-teeti > div:hover{
+    box-shadow: none;
+}
+main .insights-teeti > div i{
+    background: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+}
+main .insights-teeti > div.expenses-teeti i{
+    background-color: var(--color-danger);
+}
+main .insights-teeti > div.profit-teeti i{
+    background-color: var(--color-success);
+}
+main .insights-teeti > div .middle-teeti{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .insights-teeti h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+main .insights-teeti .progress-teeti{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+svg{
+    width: 7rem !important;
+    height: 7rem !important; 
+}
+svg circle{
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
+}
+main .insights-teeti .sales-teeti svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+main .insights-teeti .expensens-teeti svg circle{
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+main .insights-teeti .expensens-teeti svg circle{
+    stroke-dashoffset: 20;
+    stroke-dasharray: 110px;
+}
+main .insights-teeti .progress-teeti .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .insights-teeti small{
+    margin-top: 1.3rem;
+    display: block;
+}
+
+/**** ===== END OF INSIGHTS ==== *****/
+main .recent-orders-teeti{
+    margin-top: 2rem;
+
+}
+main .recent-orders-teeti h2{
+    margin-bottom: 0.8rem;
+}
+main .recent-orders-teeti table{
+    background: var(--color-white);
+    width: 90%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+main .recent-orders-teeti table:hover{
+    box-shadow: none;
+}
+input.input-border-color{
+    border:1px solid var(--color-danger)!important;
+
+}
+form .form-one button.cust_inp{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    width: 200px;
+    height: 300px;
+}
+main table tbody{
+    margin-top: 2rem !important;
+}
+main tbody td div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table tbody td div{
+    border-radius: 50%;
+    width: 2rem !important;
+    height: 2rem !important;
+    background: var(--color-primary);
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+table tbody td:last-child div i{
+    font-size: 20px;
+    color: var(--color-white);
+    
+    
+}
+table tbody td:last-child div i:hover{
+    font-size: 24px;
+}
+table tbody td{
+    height: 2.8rem !important;
+    
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+table tbody td img{
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin :auto;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+main table tbody tr:last-child td{
+    border: none;
+}
+main .recent-orders-teeti a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+}
+
+/**** ===== RIGHT ==== *****/
+.right-teeti{
+    margin-top: 1.4rem;
+    margin-right: 1.5rem;
+}
+.right-teeti .top-teeti{
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+
+
+}
+.right-teeti .top-teeti button {
+    display: none;
+}
+.right-teeti .theme-toggler-teeti{
+    background: var(--color-light);
+    display: flex;
+    justify-content: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+.right-teeti .theme-toggler-teeti i {
+    font-size: 1rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-teeti .theme-toggler-teeti i.active{
+    background: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+.right-teeti .top-teeti .profile-teeti{
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+/**** ===== RIGHT UPDATES ==== *****/
+.right-teeti .recent-updates-teeti{
+    margin-top: 1rem;
+}
+.right-teeti .recent-updates-teeti h2{
+    margin-bottom: 0.8rem;
+}
+.right-teeti .recent-updates-teeti .updates{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+.right-teeti .recent-updates-teeti .updates:hover{
+    box-shadow: none;
+}
+.right-teeti .recent-updates-teeti .updates .update{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.right-teeti .sales-analytics-teeti{
+    margin-top: 2rem;
+}
+.right-teeti .sales-analytics-teeti h2{
+    margin-bottom: 0.8rem;
+}
+.right-teeti .sales-analytics-teeti .item{
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+.right-teeti .sales-analytics-teeti .item:hover{
+    box-shadow: none;
+}
+.right-teeti .sales-analytics-teeti .item .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+    width: 100%;
+}
+.right-teeti .sales-analytics-teeti .item .icon{
+    padding: 0.6rem;
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    background: var(--color-primary);
+}
+.right-teeti .sales-analytics-teeti .item.offline .icon{
+    background: var(--color-danger);
+}
+.right-teeti .sales-analytics-teeti .item.offline .icon{
+    background: var(--color-success);
+}
+.right-teeti .sales-analytics-teeti .add-product{
+    background-color: transparent;
+    border: 2px dashed var(--color-primary);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-teeti .sales-analytics-teeti .add-product div{
+    display: flex;
+    align-items: center;
+    gap:0.6rem;
+}
+.right-teeti .sales-analytics-teeti .add-product div h3{
+    font-weight: 600;
+}
+
+/**** ===== MEDIA QUERIES ==== *****/
+
+
+@media screen and (min-width:1200px) {
+    aside .sidebar-teeti a:last-child{
+        position: relative;
+        margin-top: 20rem;
+    }
+   
+}
+@media screen and (max-width: 1200px) {
+    .container-teeti{
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+    aside .logo-teeti h2{
+        display: none;
+    }
+    aside .sidebar-teeti h3{
+        display: none !important;
+    }
+    aside .sidebar-teeti a{
+        width: 5.6rem !important;
+    }
+    aside .sidebar-teeti a:last-child{
+        position: relative;
+        margin-top: 18rem;
+    }
+    main .insights-teeti{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    main .recent-orders-teeti{
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 8.8rem;
+    }
+    main .recent-orders-teeti table{
+        width: 83vw;
+    }
+    main table .remove-item{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .container-teeti{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    @keyframes showMenu {
+        to{
+            left:0;
+        }
+    }
+    aside{
+        position: fixed;
+        left: -100%;
+        background: var(--color-white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+        height: 100vh;
+        padding-right: var(--card-padding);
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+    
+    aside .logo-teeti{
+        margin-left: 1rem;
+    }
+    aside .logo-teeti h2{
+        display: inline;
+    }
+    aside .sidebar-teeti h3{
+        display: inline !important;
+    }
+    aside .sidebar-teeti a{
+        width: 100% !important;
+        height: 3.4rem;
+    }
+    aside .sidebar-teeti a:last-child{
+        position: absolute;
+        bottom: 5rem;
+    }
+    aside .close-teeti{
+        display: inline-block;
+        cursor: pointer;
+    }
+    main{
+        margin-top: 8rem;
+        padding: 0 1rem;
+    }
+    main .recent-orders-teeti {
+       position: relative;
+       margin: 3rem 0 0 0;
+       width: 100%;  
+    }
+    main .recent-orders-teeti table{
+        width: 100%;
+        margin: 0;
+    }
+    .right-teeti{
+        
+        margin: 0 2rem auto;
+    }
+    .right-teeti .top-teeti{
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background: var(--color-white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--color-light);
+    }
+    .right-teeti .top-teeti .theme-toggler-teeti{
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+    .right-teeti .profile-teeti .info-teeti{
+        display: none;
+    }
+    .right-teeti .top-teeti button {
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-dark);
+        position: absolute;
+        left: 1rem;
+    }
+    .right-teeti .top-teeti button i{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 498px) {
+    .remove-mob{
+        display: none;
+    }
+    main .recent-orders-teeti table td img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/**** ====== PROFILE ====== *****/
+.form-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    border: 1px solid var(--color-info-light);
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    padding: var(--card-padding);
+    background-color: #faf9ff;
+    margin-bottom: 120px;
+}
+/***** ===== PROGRESS ======*****/
+.form-box .progress{
+    position: relative;
+    padding: 1em;
+}
+.logo-profile{
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--color-dark);
+    padding: 40px 40px;
+    text-align: center;
+}
+.logo-profile span{
+    color: var(--color-danger);
+}
+.progress-profile ul.progress-steps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+.progress-profile ul.progress-steps li{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+    text-decoration: none;
+}
+.progress-profile ul.progress-steps li > span{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+    border-radius: 50%;
+    background-color: var(--color-info-light);
+    z-index: 1;
+    cursor: pointer;
+}
+.progress-profile ul.progress-steps li.active > span{
+    background: var(--color-primary-variant);
+    color: var(--color-info-light);
+    border: 4px solid var(--color-primary);
+    z-index: 1;
+}
+
+.progress-profile ul.progress-steps li p span{
+    font-size: 0.8em;
+    color: lightgray;
+    display: none;
+
+}
+.progress-profile ul li p{
+    position: absolute;
+    top: -2em;
+    font-size: 12px;
+}
+/****FORMS****/
+.form-box form{
+    width: 100%;
+    padding: 3em 1em;
+    background-color: white;
+    border-radius: 30px 30px 15px 15px;
+}
+form > div{
+    max-width: 400px;
+    margin: 0 auto;
+}
+form > div p{
+    color: var(--color-light);
+    margin-bottom: 2em;   
+}
+form > div > div:not(.checkbox){
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+form :where(input,select){
+    height: 40px;
+    padding: 0 1em;
+    border-radius: 7px;
+    outline-color: var(--color-primary);
+    border: 1px solid var(--color-info-light);
+    background: transparent;
+}
+form label{
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+.text-danger{
+    color: var(--color-danger);
+    font-weight: 600;
+}
+.text-success{
+    color: var(--color-success);
+    font-weight: 500;
+}
+.text-warning{
+    color: var(--color-warning);
+    font-weight: 600;
+}
+form .grouping{
+    display: flex;
+}
+form .grouping .country-num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .grouping input{
+    width: 100%;
+    text-align: center;
+    margin-right: 1em;
+}
+form .checkbox input{
+    height: auto;
+}
+form .profile-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form .profile-pic .img-prev{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+form .profile-pic .buttons-pic{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1.4em;
+}
+form .profile-pic .buttons-pic i{
+    cursor: pointer;
+}
+form .profile-pic .buttons-pic .up{
+    width: 50px;
+    height: 50px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form .profile-pic .buttons-pic .del{
+    width: 50px;
+    height: 50px;
+    margin-left: 0.4em;
+    background: var(--color-danger);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-one ,.form-two, .form-three{
+    display: none;
+}
+form div.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 2em;
+}
+.btn-group [class = "badd"]{
+    background-color: var(--color-primary) !important;
+    color: var(--color-white) !important;
+    padding: 1em 2.5em !important;
+    border-radius: 50% !important;
+    cursor: pointer;
+}
+.btn-group [class*="btn-"] {
+    background-color: var(--color-primary) !important;
+    color: var(--color-white);
+    padding: 1em 2.5em;
+    border: 1px solid var(--color-primary);
+    border-radius: 38px;
+    cursor: pointer;
+    -webkit-transition: background-color .5s border-color .5s ease-out;
+    transition: background-color .5s border-color .5s ease-out;
+}
+.btn-group [class*="btn-"]:disabled{
+    background-color: var(--color-light);
+    border-color: var(--color-light);
+    cursor: text;
+    color: var(--color-dark-variant);
+}
+.btn-group [class*="btn-"]:hover:not(:disabled){
+    background-color: var(--color-dark);
+    border-color: var(--color-light);
+}   
+::placeholder{
+    color: var(--color-info-light);
+}
+@media screen and (min-width:768px){
+    .form-box{
+        flex-direction: row;
+    }
+    .form-box form{
+        padding: 3em;
+        border-radius: 0 15px 15px 0;
+    }
+    .form-box .progress{
+        flex: 1 0 35%;
+        min-width: 300px;
+        padding: 3em;
+    }
+    .progress-profile ul.progress-steps{
+        flex-direction: column;
+        gap: 0;
+    }
+    .progress-profile ul.progress-steps li:not(:last-child)::before{
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        width: 2px;
+        height: 65px;
+        background-color: var(--color-info-light)!important;
+    }
+    .progress-profile ul li p{
+        position: relative;
+        top: auto;
+        font-size: inherit;
+    }
+    .progress-profile ul.progress-steps li p span{
+        display: block;
+    }
+
+}
+.draft{
+    background: var(--color-danger)!important;
+}
